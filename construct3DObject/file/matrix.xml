@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>matrix info</comment>
+<entry key="threshold">0.5</entry>
+<entry key="fileType">MLSingle</entry>
+<entry key="zDim">29</entry>
+<entry key="parameterName">subVolume</entry>
+<entry key="yDim">41</entry>
+<entry key="xDim">47</entry>
+</properties>

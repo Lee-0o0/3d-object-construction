@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContourConstruct.iml" filepath="$PROJECT_DIR$/ContourConstruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/construct3DObject/construct3DObject.iml" filepath="$PROJECT_DIR$/construct3DObject/construct3DObject.iml" />
+    </modules>
+  </component>
+</project>

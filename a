@@ -1,0 +1,41 @@
+[33mcommit 12b79b1bad659a2c4e6a931ee93f762b856f4b04[m
+Author: 李洪波 <773702776@qq.com>
+Date:   Thu Dec 24 19:29:48 2020 +0800
+
+    D-P algorithm success a bit,waiting optimize
+
+[33mcommit 4ddc8b0fcbd458615f0e3a6185554a0a930e7b0c[m
+Author: 李洪波 <773702776@qq.com>
+Date:   Thu Dec 24 16:36:18 2020 +0800
+
+    nothing
+
+[33mcommit 27a5ee3ec25199eef07177635badc0815bd117c8[m
+Author: 李洪波 <773702776@qq.com>
+Date:   Thu Dec 24 16:33:06 2020 +0800
+
+    try D-P algorithm,but failed
+
+[33mcommit 3f33a02dbda2f59b614ed77721ba92745913caee[m
+Author: lihongbo <773702776@qq.com>
+Date:   Wed Dec 16 21:09:19 2020 +0800
+
+    Quadtree Recursion Finished,version 1.2
+
+[33mcommit ef3cfec9d096cc075408499a63e238dd0f84b6cc[m
+Author: lihongbo <773702776@qq.com>
+Date:   Wed Dec 16 16:38:13 2020 +0800
+
+    GUI Finished
+
+[33mcommit e335ef74f67b20295098ced87af81186aaf10dac[m
+Author: lihongbo <773702776@qq.com>
+Date:   Tue Dec 15 15:39:26 2020 +0800
+
+    version 1.2 set layer height
+
+[33mcommit 019a818492a9836c415410506f04d4c55075a9c8[m
+Author: lihongbo <773702776@qq.com>
+Date:   Mon Dec 14 20:06:09 2020 +0800
+
+    version 1.0

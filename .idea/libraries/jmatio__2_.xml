@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jmatio (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/construct3DObject/lib/jmatio.jar!/" />
+      <root url="jar://$PROJECT_DIR$/construct3DObject/lib/ujmp-complete-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
