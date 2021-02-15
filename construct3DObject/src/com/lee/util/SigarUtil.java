@@ -22,7 +22,7 @@ public class SigarUtil {
                 s.printStackTrace();
             }
             long total = mem.getTotal();
-            System.out.println("内存总量："+total/1024/1024/1024+"GB");
+            System.out.println("系统内存总量："+total+" Byte");
             return total;
         }else {
             return -1;

@@ -2,7 +2,46 @@ package com.lee.algorithm;
 
 import com.lee.util.ArithUtil;
 
+/**
+ * 插值增加层数
+ */
 public class Interpolation {
+
+    /**
+     * 获取指定高度的该层数据
+     * @param data 原始数据
+     * @param height 指定高度
+     * @param layerHeight 层高
+     * @return
+     */
+    public static double[][] getLayerData(double[][][] data, double height,double layerHeight){
+        double[][] result = new double[data.length][data[0].length];
+
+        if (isInteger(height)){
+            // 高度为整数，不需要插值
+            for (int i = 0; i < data.length; i ++){
+                for (int j = 0; j < data[0].length; j++){
+                    result[i][j] = data[i][j][(int)height];
+                }
+            }
+        }else {
+            // 需要插值
+            for (int x = 0 ; x < data.length; x++){
+                for (int y = 0; y <data[0].length; y++){
+                    if (x==data.length-1 || y == data[0].length-1) {
+                        result[x][y] = TrilinearInterpAlgorithm.interpolation(data, x-0.01, y-0.01, height);
+                    }else {
+                        result[x][y] = TrilinearInterpAlgorithm.interpolation(data, x, y, height);
+                    }
+                }
+            }
+        }
+
+        return result;
+
+    }
+
+
     /**
      * 线性插值
      * @param data

@@ -21,7 +21,7 @@ public class TrilinearInterpAlgorithm {
     }
 
     /**
-     * 线性插值
+     * 线性插值 , 返回matrix中（xPos,yPos,zPos)处的值
      *
      * @param matrix
      * @param xPos
@@ -47,6 +47,7 @@ public class TrilinearInterpAlgorithm {
         double deltaX = localX - (double) xBase;
         double deltaY = localY - (double) yBase;
         double deltaZ = localZ - (double) zBase;
+//        System.out.println("zbase="+zBase);
         double i1 = thisMatrix[xBase][yBase][zBase] * (1 - deltaZ)
                 + thisMatrix[xBase][yBase][zBase + 1] * deltaZ;
         double i2 = thisMatrix[xBase][yBase + 1][zBase] * (1 - deltaZ)

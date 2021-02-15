@@ -95,7 +95,7 @@ public class Main {
             double verificationThreshold)
             throws CloneNotSupportedException {
         JPanel jPanel = new JPanel();
-        jPanel.setPreferredSize(new Dimension(300, 200));
+        jPanel.setPreferredSize(new Dimension(500, 200));
         GridLayout gridLayout = new GridLayout(15, 1);
         gridLayout.setVgap(10);
         jPanel.setLayout(gridLayout);
@@ -122,6 +122,7 @@ public class Main {
         try {
             data = MATReader.readMAT("data/" + name + ".mat");
         } catch (IOException e) {
+            System.out.println("读取数据失败!");
             e.printStackTrace();
         }
 
@@ -133,7 +134,7 @@ public class Main {
         jPanel.add(new JLabel("层数：" + layers));
 
         // 如果data数据量太大，分层插值，IO读取
-        if (data.length * data[0].length * data[0][0].length * 8 * 16L > totalMemory*3.0 / 4.0) {
+//        if (data.length * data[0].length * data[0][0].length * 8 * 16L > totalMemory*3.0 / 4.0) {
             System.out.println(11111111);
             double zHeight = -layerHeight;
             // 清空对应的轮廓文件
@@ -193,115 +194,127 @@ public class Main {
             }
             System.out.println("提取轮廓消耗时间" + (System.currentTimeMillis() - readFileStart) + "毫秒。");
 
-            // 生成Gcode文件
-            long gcodeStartTime = System.currentTimeMillis();
-            GCodeGenerator.generator();
-            System.out.println(
-                    "生成Gcode文件消耗时间：" + (System.currentTimeMillis() - gcodeStartTime) + "毫秒");
-
-        } else {
-            System.out.println(222222);
-
-            // 四叉树递归,提升精度
-            data = QuadtreeRecursion.quadtreeRecurse(data, accuracy);
-
-            // 清空对应的轮廓文件
-            StoreContours.clearFile();
-
-            System.out.println(
-                    "读取数据、数据预处理时间：" + (System.currentTimeMillis() - readFileStart) + "毫秒");
-            jPanel.add(
-                    new JLabel(
-                            "读取数据、数据预处理时间：" + (System.currentTimeMillis() - readFileStart) + "毫秒"));
-
-            long contourExtractionStartTime = System.currentTimeMillis();
-            double zHeight = -layerHeight;
-
-            for (int i = 0; i < layers; i++) {
-
-                zHeight = ArithUtil.add(zHeight, layerHeight);
-                // 每层的 数据转置、扩充
-                double[][] layerData = DataUtil.getXthLayer(data, i);
-
-                List<LineSegment> lineSegments =
-                        MarchingSquares.marchingSquares(layerData, threshold, accuracy);
-                if (lineSegments.size() == 0) continue;
-                // 由于后续平滑算法会改变点的位置，所以此处复制一份最初的轮廓线段
-                List<LineSegment> initLineSegments = new ArrayList<>();
-                for (LineSegment lineSegment : lineSegments) {
-                    initLineSegments.add(
-                            new LineSegment(
-                                    lineSegment.getStartPoint(), lineSegment.getEndPoint()));
-                }
-
-                LineSegmentOrdered.orderingLineSegment(lineSegments);
-
-                List<LineSegment> smoothLineSegments =
-                        Smoothing.smoothing(lineSegments, smoothThreshold);
-                // 平滑算法完成后，还有next信息，即可以通过当前线段找到下一条线段
-
-                List<List<LineSegment>> contours =
-                        ExtractContours.extractContours(smoothLineSegments);
-                //      List<List<LineSegment>> contours =
-                // ExtractContours.extractContours(lineSegments);
-                // contour.get(index)即为一个闭环,线段有序,即contour.get(i)的下一条边就是contour.get(i+1)
-
-//                System.out.println(0);
-//                      List<List<LineSegment>> regions =
-//                 ContourSimplification.createRegion(contours);
-                List<List<LineSegment>> regions = ContourSimplification.createRegionOfDP(contours);
-//                System.out.println(1);
-
-                List<LineSegment> verificatedLineSegments =
-                        ContourSimplification.verification(regions, verificationThreshold);
-
-//                System.out.println(2);
-                LineSegmentOrdered.orderingLineSegment(verificatedLineSegments);
-
-//                System.out.println(3);
-                List<List<LineSegment>> finalContours =
-                        ExtractContours.extractContours(verificatedLineSegments);
-
-//                System.out.println(4);
-                // 保存轮廓数据到文件中
-                StoreContours.storeContours(zHeight, finalContours);
-                //                  StoreContours.storeContours(zHeight,contours);
-
-                // 画图显示
-                DrawingPaint drawingPaint =
-                        new DrawingPaint(
-                                initLineSegments,
-                                smoothLineSegments,
-                                regions,
-                                verificatedLineSegments);
-                drawingPaint.setVisible(true);
-                frame.add(drawingPaint, BorderLayout.CENTER);
-
-                frame.setVisible(true);
-            }
-            System.out.println(
-                    name
-                            + "提取轮廓消耗时间："
-                            + (System.currentTimeMillis() - contourExtractionStartTime)
-                            + "毫秒");
-            jPanel.add(
+                    jPanel.add(
                     new JLabel(
                             name
                                     + "提取轮廓消耗时间："
-                                    + (System.currentTimeMillis() - contourExtractionStartTime)
+                                    + (System.currentTimeMillis() - readFileStart)
                                     + "毫秒"));
-
             // 生成Gcode文件
             long gcodeStartTime = System.currentTimeMillis();
             GCodeGenerator.generator();
             System.out.println(
                     "生成Gcode文件消耗时间：" + (System.currentTimeMillis() - gcodeStartTime) + "毫秒");
-            jPanel.add(
+
+                    jPanel.add(
                     new JLabel(
                             "生成Gcode文件消耗时间："
                                     + (System.currentTimeMillis() - gcodeStartTime)
                                     + "毫秒"));
-        }
+
+//        } else {
+//            System.out.println(222222);
+//
+//            // 四叉树递归,提升精度
+//            data = QuadtreeRecursion.quadtreeRecurse(data, accuracy);
+//
+//            // 清空对应的轮廓文件
+//            StoreContours.clearFile();
+//
+//            System.out.println(
+//                    "读取数据、数据预处理时间：" + (System.currentTimeMillis() - readFileStart) + "毫秒");
+//            jPanel.add(
+//                    new JLabel(
+//                            "读取数据、数据预处理时间：" + (System.currentTimeMillis() - readFileStart) + "毫秒"));
+//
+//            long contourExtractionStartTime = System.currentTimeMillis();
+//            double zHeight = -layerHeight;
+//
+//            for (int i = 0; i < layers; i++) {
+//
+//                zHeight = ArithUtil.add(zHeight, layerHeight);
+//                // 每层的 数据转置、扩充
+//                double[][] layerData = DataUtil.getXthLayer(data, i);
+//
+//                List<LineSegment> lineSegments =
+//                        MarchingSquares.marchingSquares(layerData, threshold, accuracy);
+//                if (lineSegments.size() == 0) continue;
+//                // 由于后续平滑算法会改变点的位置，所以此处复制一份最初的轮廓线段
+//                List<LineSegment> initLineSegments = new ArrayList<>();
+//                for (LineSegment lineSegment : lineSegments) {
+//                    initLineSegments.add(
+//                            new LineSegment(
+//                                    lineSegment.getStartPoint(), lineSegment.getEndPoint()));
+//                }
+//
+//                LineSegmentOrdered.orderingLineSegment(lineSegments);
+//
+//                List<LineSegment> smoothLineSegments =
+//                        Smoothing.smoothing(lineSegments, smoothThreshold);
+//                // 平滑算法完成后，还有next信息，即可以通过当前线段找到下一条线段
+//
+//                List<List<LineSegment>> contours =
+//                        ExtractContours.extractContours(smoothLineSegments);
+//                //      List<List<LineSegment>> contours =
+//                // ExtractContours.extractContours(lineSegments);
+//                // contour.get(index)即为一个闭环,线段有序,即contour.get(i)的下一条边就是contour.get(i+1)
+//
+////                System.out.println(0);
+////                      List<List<LineSegment>> regions =
+////                 ContourSimplification.createRegion(contours);
+//                List<List<LineSegment>> regions = ContourSimplification.createRegionOfDP(contours);
+////                System.out.println(1);
+//
+//                List<LineSegment> verificatedLineSegments =
+//                        ContourSimplification.verification(regions, verificationThreshold);
+//
+////                System.out.println(2);
+//                LineSegmentOrdered.orderingLineSegment(verificatedLineSegments);
+//
+////                System.out.println(3);
+//                List<List<LineSegment>> finalContours =
+//                        ExtractContours.extractContours(verificatedLineSegments);
+//
+////                System.out.println(4);
+//                // 保存轮廓数据到文件中
+//                StoreContours.storeContours(zHeight, finalContours);
+//                //                  StoreContours.storeContours(zHeight,contours);
+//
+//                // 画图显示
+//                DrawingPaint drawingPaint =
+//                        new DrawingPaint(
+//                                initLineSegments,
+//                                smoothLineSegments,
+//                                regions,
+//                                verificatedLineSegments);
+//                drawingPaint.setVisible(true);
+//                frame.add(drawingPaint, BorderLayout.CENTER);
+//
+//                frame.setVisible(true);
+//            }
+//            System.out.println(
+//                    name
+//                            + "提取轮廓消耗时间："
+//                            + (System.currentTimeMillis() - contourExtractionStartTime)
+//                            + "毫秒");
+//            jPanel.add(
+//                    new JLabel(
+//                            name
+//                                    + "提取轮廓消耗时间："
+//                                    + (System.currentTimeMillis() - contourExtractionStartTime)
+//                                    + "毫秒"));
+//
+//            // 生成Gcode文件
+//            long gcodeStartTime = System.currentTimeMillis();
+//            GCodeGenerator.generator();
+//            System.out.println(
+//                    "生成Gcode文件消耗时间：" + (System.currentTimeMillis() - gcodeStartTime) + "毫秒");
+//            jPanel.add(
+//                    new JLabel(
+//                            "生成Gcode文件消耗时间："
+//                                    + (System.currentTimeMillis() - gcodeStartTime)
+//                                    + "毫秒"));
+//        }
 
         JLabel resultInfo = new JLabel("结果信息：");
         resultInfo.setForeground(Color.RED);

@@ -42,15 +42,15 @@ public class OffsetAlgorithm {
         // 将points中的重复点删除，保持顺序
         LinkedHashSet<Point> linkedHashSet1 = new LinkedHashSet<>(points);
         points = new ArrayList<>(linkedHashSet1);
-        System.out.println("------points------");
-        for (Point p : points) {
-            System.out.print(p.getX()+" ");
-        }
-        System.out.println();
-        for (Point p : points) {
-            System.out.print(p.getY()+" ");
-        }
-        System.out.println();
+//        System.out.println("------points------");
+//        for (Point p : points) {
+//            System.out.print(p.getX()+" ");
+//        }
+//        System.out.println();
+//        for (Point p : points) {
+//            System.out.print(p.getY()+" ");
+//        }
+//        System.out.println();
 
         // 计算缩进方向
         Map<String, List<Vector>> direction = getDirection(points);
@@ -239,9 +239,9 @@ public class OffsetAlgorithm {
             }
 
 
-            System.out.println("判断是否在contour外");
+//            System.out.println("判断是否在contour外");
             for (Point point: finalInshell){
-                System.out.println(point);
+//                System.out.println(point);
                 if (point == null){
                     continue;
                 }
@@ -263,25 +263,25 @@ public class OffsetAlgorithm {
             LinkedHashSet<Point> linkedHashSet = new LinkedHashSet<>(finalInshell);
             finalInshell = new ArrayList<>(linkedHashSet);
 
-            System.out.println("----------finalInshell");
-            for (Point point : finalInshell) {
-                System.out.print(point.getX()+" ");
-            }
-            System.out.println();
-            for (Point point : finalInshell) {
-                System.out.print(point.getY()+" ");
-            }
-            System.out.println();
+//            System.out.println("----------finalInshell");
+//            for (Point point : finalInshell) {
+//                System.out.print(point.getX()+" ");
+//            }
+//            System.out.println();
+//            for (Point point : finalInshell) {
+//                System.out.print(point.getY()+" ");
+//            }
+//            System.out.println();
 
             // 消除全局无效环
 
             // 获取所有的交点
 //            System.out.println("获取所有的自交点");
             Map<Point, List<Point>> intersection = getIntersection(finalInshell);
-            for (Point point : intersection.keySet()) {
-                System.out.println("point="+point+" : "+intersection.get(point).size());
-                System.out.println(intersection.get(point));
-            }
+//            for (Point point : intersection.keySet()) {
+//                System.out.println("point="+point+" : "+intersection.get(point).size());
+//                System.out.println(intersection.get(point));
+//            }
             // 如果没有自交点，说明不存在全局无效环，不用处理
             if (intersection.size() == 0) {
 //                System.out.println("没有全局无效环");
@@ -304,16 +304,16 @@ public class OffsetAlgorithm {
                     }
                 }
 
-                System.out.println("allPoints = " + allPoints);
-                System.out.println("是否自交点=" + isIntersectionPoint);
-                System.out.println(allPoints.size() + "  " + isIntersectionPoint.size());
+//                System.out.println("allPoints = " + allPoints);
+//                System.out.println("是否自交点=" + isIntersectionPoint);
+//                System.out.println(allPoints.size() + "  " + isIntersectionPoint.size());
 
-                System.out.println("自交点-----------");
-                for (int j = 0; j < allPoints.size(); j++){
-                    if (isIntersectionPoint.get(j)){
-                        System.out.println(j+" -- "+allPoints.get(j));
-                    }
-                }
+//                System.out.println("自交点-----------");
+//                for (int j = 0; j < allPoints.size(); j++){
+//                    if (isIntersectionPoint.get(j)){
+//                        System.out.println(j+" -- "+allPoints.get(j));
+//                    }
+//                }
 
                 List<List<Point>> lists =
                         processGlobalInvalidLoop(points, allPoints, isIntersectionPoint);
@@ -362,10 +362,10 @@ public class OffsetAlgorithm {
         List<List<Point>> res = new ArrayList<>();
 
         while (!stack.isEmpty()) {
-            System.out.println("stack=" + stack);
-            System.out.println("indexOfStartPointStack = " + indexOfStartPointStack);
+//            System.out.println("stack=" + stack);
+//            System.out.println("indexOfStartPointStack = " + indexOfStartPointStack);
             Point startPoint = stack.pop();
-            System.out.println("startPoint = "+startPoint);
+//            System.out.println("startPoint = "+startPoint);
             int index = indexOfStartPointStack.pop();
             isVisited[index] = true;
 

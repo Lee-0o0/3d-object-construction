@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c59f4386-202c-4bb2-96d8-fd0dc4cef24f" name="Default Changelist" comment="" />
+    <list default="true" id="c59f4386-202c-4bb2-96d8-fd0dc4cef24f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/2Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/3Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/Rec_leftCL_3branch_forPrint.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/brainArt_all.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/coeArt1.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/corArt2.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/ip80_left_phiB0.8.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/liverSub.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=0.2_transpose/neckArt_all.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/2Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/2Br.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/3Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/3Br.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/Rec_leftCL_3branch_forPrint.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/brainArt_all.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/brainArt_all.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/corArt1.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/corArt1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/corArt2.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/corArt2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/heart_train1001_sub2.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/heart_train1001_sub2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/ip80_left_phiB0.8.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/ip80_left_phiB0.8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/liverSub.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/height=1.0_non-transpose/neckArt_all.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/matrix.xml" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/file/matrix.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet2/2Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet2/3Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet2/Rec_leftCL_3branch_forPrint.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet2/ip80_left_phiB0.8.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/2Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/3Br.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/Rec_leftCL_3branch_forPrint.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/brainArt_all.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/corArt1.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/corArt2.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/ip80_left_phiB0.8.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/liverSub.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/sheet3/neckArt_all.gcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/xListFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/file/xListFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/yListFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/file/yListFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/file/zListFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/file/zListFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/OffsetAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/OffsetAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/QuadtreeRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/QuadtreeRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/TrilinearInterpAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/TrilinearInterpAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/listener/StartListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/listener/StartListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/construct3DObject/src/com/lee/util/SigarUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/construct3DObject/src/com/lee/util/SigarUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/Interpolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/Interpolation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/OffsetAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/OffsetAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/QuadtreeRecursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/QuadtreeRecursion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/TrilinearInterpAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/algorithm/TrilinearInterpAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/listener/StartListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/listener/StartListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/util/SigarUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/construct3DObject/com/lee/util/SigarUtil.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,34 +94,36 @@
     <session id="-1575585872">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="25" />
+          <entry key="java" value="33" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="33" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="923" />
+          <entry key="java" value="1823" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="923" />
+          <entry key="JAVA" value="1823" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -74,20 +137,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/OffsetAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="244" column="33" selection-start-line="244" selection-start-column="33" selection-end-line="244" selection-end-column="33" />
+            <state relative-caret-position="61">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/util/MathUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -95,47 +149,75 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/GCodeAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
+            <state relative-caret-position="213">
               <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Test10.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DrawingBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2814">
-              <caret line="149" column="44" selection-start-line="149" selection-start-column="44" selection-end-line="149" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithm/ScalarContour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8169">
-              <caret line="399" column="78" selection-start-line="399" selection-start-column="78" selection-end-line="399" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/Main1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1057">
+              <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/QuadtreeRecursion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/TrilinearInterpAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="250" column="47" selection-start-line="250" selection-start-column="47" selection-end-line="250" selection-end-column="47" />
+            <state relative-caret-position="399">
+              <caret line="140" column="38" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/listener/StartListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/util/SigarUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+              <folding>
+                <element signature="e#2806#2807#0" expanded="true" />
+                <element signature="e#2862#2863#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,6 +243,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>System.out</find>
+      <find>------points------</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,14 +253,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/util/MathUtil.java" />
-        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java" />
         <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/StoreContours.java" />
         <option value="$PROJECT_DIR$/file/test.txt" />
         <option value="$PROJECT_DIR$/src/test/Test10.java" />
         <option value="$PROJECT_DIR$/src/algorithm/ScalarContour.java" />
-        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/GCodeAlgorithm.java" />
         <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/Main.java" />
         <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/OffsetAlgorithm.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/util/SigarUtil.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/listener/StartListener.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/QuadtreeRecursion.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/TrilinearInterpAlgorithm.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/GCodeAlgorithm.java" />
+        <option value="$PROJECT_DIR$/construct3DObject/src/com/lee/Main1.java" />
       </list>
     </option>
   </component>
@@ -187,7 +275,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="175" />
     <option name="y" value="35" />
     <option name="width" value="1615" />
@@ -202,8 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,6 +339,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="lee" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3d-object-construction-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3d-object-construction-master" type="462c0819:PsiDirectoryNode" />
+              <item name="construct3DObject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lee" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,6 +376,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -292,7 +389,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612673511046" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613374095130" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -304,11 +401,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lee" />
       <recent name="com.lee.entity" />
       <recent name="com.lee.util" />
       <recent name="com.lee.algorithm" />
       <recent name="entity" />
-      <recent name="util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\code\construct-3D-Object\file" />
@@ -330,7 +427,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main1">
     <configuration name="DrawingBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DrawingBoard" />
       <module name="ContourConstruct" />
@@ -352,12 +449,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SigarUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lee.util.SigarUtil" />
+    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lee.Main1" />
       <module name="construct3DObject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lee.util.*" />
+          <option name="PATTERN" value="com.lee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -440,18 +537,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.SigarUtil" />
       <item itemvalue="Application.DrawingBoard" />
       <item itemvalue="Application.Test09" />
       <item itemvalue="Application.Test10" />
+      <item itemvalue="Application.Main1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main1" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test10" />
         <item itemvalue="Application.DrawingBoard" />
         <item itemvalue="Application.Test09" />
-        <item itemvalue="Application.SigarUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -536,18 +633,21 @@
       <workItem from="1612663959896" duration="6208000" />
       <workItem from="1612693508175" duration="9395000" />
       <workItem from="1612747266285" duration="8120000" />
+      <workItem from="1612770599115" duration="5236000" />
+      <workItem from="1612777324905" duration="1204000" />
+      <workItem from="1612779201732" duration="684000" />
+      <workItem from="1613357628221" duration="9016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32343000" />
+    <option name="totallyTimeSpent" value="48483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4936351" visible="true" weight="0.29088473" />
-      <window_info id="Structure" order="1" sideWeight="0.50636494" side_tool="true" visible="true" weight="0.29088473" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49107143" visible="true" weight="0.2386059" />
+      <window_info id="Structure" order="1" sideWeight="0.5089286" side_tool="true" weight="0.29490617" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -555,7 +655,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5007072" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36633664" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41926345" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.55021214" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -644,12 +744,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/OffsetAlgorithm.java</url>
-          <line>364</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/algorithm/ScalarContour.java</url>
           <line>347</line>
           <properties />
@@ -695,24 +789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/LineSegmentOrdered.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="36" column="40" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/QuadtreeRecursion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="70" column="18" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -730,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/TrilinearInterpAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/MarchingSquares.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
@@ -751,10 +824,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/GCodeAlgorithm.java">
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/util/MathUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state relative-caret-position="2499">
+          <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -789,27 +862,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/util/MathUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/OffsetAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="244" column="33" selection-start-line="244" selection-start-column="33" selection-end-line="244" selection-end-column="33" />
+        <state relative-caret-position="61">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/util/SigarUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/listener/StartListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/Interpolation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+          <folding>
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/QuadtreeRecursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/TrilinearInterpAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/algorithm/GCodeAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="250" column="47" selection-start-line="250" selection-start-column="47" selection-end-line="250" selection-end-column="47" />
+        <state relative-caret-position="399">
+          <caret line="140" column="38" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/construct3DObject/src/com/lee/Main1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1057">
+          <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 package com.lee.listener;
 
 import com.lee.Main;
+import com.lee.Main1;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -35,7 +36,7 @@ public class StartListener implements ActionListener {
         double verificationThreshold = Double.valueOf(verificationThresholdField.getText());
 
         try{
-            Main.mainFunction(frame,name,layerHeight,threshold,accuracy,smoothThreshold,verificationThreshold);
+            Main1.mainFunction(frame,name,layerHeight,threshold,accuracy,smoothThreshold,verificationThreshold);
         }catch (Exception e1){
             e1.printStackTrace();
         }
