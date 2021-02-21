@@ -53,6 +53,25 @@ public class GCodeAlgorithm {
         return true;
     }
 
+    static boolean generateEachShellOut() {
+        // 存外壳的list
+        ArrayList<Point> pointStoreList = new ArrayList<>();
+
+        List<List<Point>> lists = OffsetAlgorithm.offsetAlgorithm(GCodeParameters.pointTempList,
+                -1*GCodeParameters.extruderWidth);
+
+        if (lists != null) {
+            // 内缩外壳，也是存在边界list中
+            //            GCodeParameters.pointTempList = pointStoreList;
+            if (lists.get(0).size() != 0) {
+                GCodeParameters.pointTempList = (ArrayList<Point>) lists.get(0);
+                GCodeParameters.shellList.add(GCodeParameters.pointTempList);
+            }
+            return true;
+        }
+        return true;
+    }
+
     /**
      * 生成外壳 -- 原方法
      */

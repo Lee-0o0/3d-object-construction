@@ -447,8 +447,17 @@ public class GCodeGenerator {
             GCodeAlgorithm.calculateAverage(GCodeParameters.pointTempList);
             GCodeParameters.shellList.add(GCodeParameters.pointTempList);
             // 生成内缩轮廓
-            for (int i = 0; i < GCodeParameters.shellLayers - 1; i++) {
+            ArrayList<Point> tmp = GCodeParameters.pointTempList;
+            for (int j = 0; j < GCodeParameters.shellLayers - 1; j++) {
                 boolean b = GCodeAlgorithm.generateEachShell();
+                if (!b){
+                    break;
+                }
+            }
+            // 生成外扩轮廓
+            GCodeParameters.pointTempList = tmp;
+            for (int i = 0; i < GCodeParameters.shellLayers - 1; i++) {
+                boolean b = GCodeAlgorithm.generateEachShellOut();
                 if (!b){
                     break;
                 }
@@ -489,8 +498,19 @@ public class GCodeGenerator {
             GCodeParameters.pointTempList = GCodeAlgorithm.removeDeletePoints(pointList);
             GCodeAlgorithm.calculateAverage(GCodeParameters.pointTempList);
             GCodeParameters.shellList.add(GCodeParameters.pointTempList);
+            // 生成内缩轮廓
+            ArrayList<Point> tmp = GCodeParameters.pointTempList;
+
             for (int j = 0; j < GCodeParameters.shellLayers - 1; j++) {
                 boolean b = GCodeAlgorithm.generateEachShell();
+                if (!b){
+                    break;
+                }
+            }
+            // 生成外扩轮廓
+            GCodeParameters.pointTempList = tmp;
+            for (int m = 0; m < GCodeParameters.shellLayers - 1; m++) {
+                boolean b = GCodeAlgorithm.generateEachShellOut();
                 if (!b){
                     break;
                 }
@@ -563,8 +583,18 @@ public class GCodeGenerator {
                 // 加入打印参数中
                 GCodeParameters.shellList.add(GCodeParameters.pointTempList);
                 // 生成外壳（shellLayers层外壳，减1是减去现有边界）
+                ArrayList<Point> tmp = GCodeParameters.pointTempList;
                 for (int j = 0; j < GCodeParameters.shellLayers - 1; j++) {
                     boolean b = GCodeAlgorithm.generateEachShell();
+                    if (!b){
+                        break;
+                    }
+                }
+                // 生成外扩轮廓
+                GCodeParameters.pointTempList = tmp;
+                // 生成外扩轮廓
+                for (int m = 0; m < GCodeParameters.shellLayers - 1; m++) {
+                    boolean b = GCodeAlgorithm.generateEachShellOut();
                     if (!b){
                         break;
                     }
@@ -640,8 +670,19 @@ public class GCodeGenerator {
         GCodeParameters.pointTempList = GCodeAlgorithm.removeDeletePoints(pointList);
         GCodeAlgorithm.calculateAverage(GCodeParameters.pointTempList);
         GCodeParameters.shellList.add(GCodeParameters.pointTempList);
+
+        ArrayList<Point> tmp = GCodeParameters.pointTempList;
+
         for (int j = 0; j < GCodeParameters.shellLayers - 1; j++) {
             boolean b = GCodeAlgorithm.generateEachShell();
+            if (!b){
+                break;
+            }
+        }
+        // 生成外扩轮廓
+        GCodeParameters.pointTempList = tmp;
+        for (int m = 0; m < GCodeParameters.shellLayers - 1; m++) {
+            boolean b = GCodeAlgorithm.generateEachShellOut();
             if (!b){
                 break;
             }
